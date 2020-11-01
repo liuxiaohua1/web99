@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业</title>
+    <style>
+
+        body {
+            background-color:rgb(0, 47, 255);
+        }
+
+        .main {
+            background-color: rgb(21, 255, 0);
+            height: 603px;
+            width: 70%;
+            position:relative;
+            margin:0 auto;
+            margin-top:40px; 
+        }
+
+        .tabLeft {
+            background-color: rgb(174, 0, 255);
+            width: 30%;
+            height: 90%;
+            position: absolute;
+            top: 5%;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        [class~="menu"]{
+            background-color: blue;
+            margin:30px 5px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border:1px solid rgb(134, 211, 118);
+        }
+        .tabLeft div:first-child {
+            background-color: rgb(255, 0, 106);
+            margin-top: 30px;
+        }
+        .tabContent{
+            background-color: rgb(255, 217, 255);
+            width: 70%;
+            height:100%;
+            float:right;
+            overflow: hidden;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+            display: block;
+            height: 100%;
+            text-align: center;
+        }
+        a:active {
+            background-color: rgb(0, 64, 255);
+        }
+        .home{
+            background-color: rgb(0, 217, 255);
+            height:100%;
+            display: none;
+        }
+        .home img{
+            width:450px;
+            height:200px;
+            margin:auto;
+            position: absolute;
+            top:340px;
+            left:300px;
+            bottom:0;
+            right:0;
+            margin-top: 20px;
+        }
+        .home p{
+            text-indent: 2em;
+        }
+        .tabCntent P:first-child{
+            margin-top: 0px;
+        }
+        .opera{
+            display: none;
+            background-color: rgb(0, 66, 151);
+            position: relative;
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        
+        .opera img{
+            width:400px;
+            height:250px;
+            margin:auto;
+            position: absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            margin-top: 20px;
+        }
+        .opera p{
+            position: relative;
+            bottom:-50%;
+            text-indent: 2em;
+        }
+        .tabContent div:target{
+            display: block;
+        }
+        .paofen p{
+            text-indent: 2em;
+        }
+        .paofen img{
+            width:400px;
+            height:250px;
+            margin:auto;
+            position: relative;
+            top:0;
+            left:120px;
+            bottom:0;
+            right:0;
+            margin-top: 20px;
+        }
+        .caigeng img{
+            width:450px;
+            height:300px;
+            margin:auto;
+            position: relative;
+            top:0;
+            left:100px;
+            bottom:0;
+            right:0;
+            margin-top: 20px;
+        }
+        .caigeng,
+        .talent{
+            display: none;
+            position: relative;
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        .caigeng{
+            background-color: rgb(214, 168, 195);
+        }
+        .talent{
+            background-color: rgb(75, 212, 171);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="tabLeft">
+            <div title="index" class="menu" id="menu1">
+                <a href="#home" class="">一位法官在审理一起盗窃案中</a>
+            </div>
+            <div class="menu" id="menu2">
+                <a href="#opera" class="">对涉及到的四名嫌疑犯</a>
+            </div>
+            <div class="menu" id="menu3">
+                <a href="#paofen" class="">甲、乙、丙、丁进行了审问</a>
+            </div>
+            <div class="menu" id="menu4">
+                <a href="#caigeng" class="">四人分别供述如下</a>
+            </div>
+            <div class="menu" id="menu5">
+                <a href="#talent" class="">巴拉巴拉巴拉</a>
+            </div>
+        </div>
+        <div class="tabContent">
+            <div id="home" class="home">
+                <p>
+                    甲说:“罪犯在乙、丙、丁三人之中.”
+                </p>
+                <img src="img/img-0c216f2e5515f2c0676c8feead5bee9a.jpg">
+            </div>
+            <div id="opera" class="opera">
+                <img src="img/img-47b779ad7f0ec3f72d94e19c539a3b35.jpg">
+                <p>
+                    乙说:“我没有做案,是丙偷的.”   
+                </p>
+                
+            </div>
+            <div id="paofen" class="paofen">
+                <p>
+                    丙说:“在甲和丁之间有一个是罪犯.”
+                </p>
+                <img src="img/img-60cf022458cbe60f1eb0c901dc1f31ea.jpg">
+            </div>
+            <div id="caigeng" class="caigeng">
+                <p>
+                    丁说:“乙说的是事实.”
+                </p>
+                <img src="img/img-6a19612fe8de3b9b49c277f1ab76b10f.jpg">
+            </div>
+            <div id="talent" class="talent">
+                <p>
+                    经过调查,证实这四人中有两人说的是真话,另外两人说了假话,那么罪犯是 
+                </p>
+                <img src="img/img-7c4352dfe881db755754e384b4113fd7.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
